@@ -75,7 +75,15 @@ fun MapScreen(onReportClick: () -> Unit = {}) {
                 horizontalArrangement = Arrangement.spacedBy(4.dp)
             ) {
                 // TODO: Replace location pin placeholder with R.drawable.location_pin when exported from Figma
-                Text("📍", fontSize = 14.sp)
+
+                Image(
+                    painter = painterResource(id = R.drawable.location_pin),
+                    contentDescription = "Location Pin",
+                    modifier = Modifier
+                        .align(Alignment.Top)
+                        .offset(x = (0).dp, y = 2.dp)
+                        .size(20.dp)
+                )
                 Text(
                     text = "Universiti Malaya",
                     fontSize = 14.sp,
@@ -143,7 +151,7 @@ fun MapScreen(onReportClick: () -> Unit = {}) {
                 modifier = Modifier
                     .align(Alignment.TopCenter)
                     .offset(x = (-40).dp, y = 50.dp)
-                    .size(32.dp)
+                    .size(45.dp)
             )
 
             // 2. Blocked drain marker
@@ -153,7 +161,7 @@ fun MapScreen(onReportClick: () -> Unit = {}) {
                 modifier = Modifier
                     .align(Alignment.CenterStart)
                     .offset(x = 40.dp, y = (-20).dp)
-                    .size(32.dp)
+                    .size(45.dp)
             )
 
             // 3. Bus stop marker 1
@@ -163,7 +171,7 @@ fun MapScreen(onReportClick: () -> Unit = {}) {
                 modifier = Modifier
                     .align(Alignment.CenterEnd)
                     .offset(x = (-50).dp, y = (-30).dp)
-                    .size(32.dp)
+                    .size(45.dp)
             )
 
             // 4. Bus stop marker 2
@@ -173,10 +181,17 @@ fun MapScreen(onReportClick: () -> Unit = {}) {
                 modifier = Modifier
                     .align(Alignment.BottomStart)
                     .offset(x = 70.dp, y = (-70).dp)
-                    .size(32.dp)
+                    .size(45.dp)
             )
-
-            // TODO: Add fallen_tree_map_marker Image here when R.drawable.fallen_tree_map_marker is exported from Figma
+            //5. fallen tree marker
+            Image(
+                painter = painterResource(id = R.drawable.fallen_tree),
+                contentDescription = "Fallen Tree Marker",
+                modifier = Modifier
+                    .align(Alignment.CenterStart)
+                    .offset(x = 100.dp, y = (-50).dp)
+                    .size(45.dp)
+            )
 
             // Location button (Recenter map)
             Box(
@@ -192,7 +207,7 @@ fun MapScreen(onReportClick: () -> Unit = {}) {
                 Image(
                     painter = painterResource(id = R.drawable.recenter_map),
                     contentDescription = "Recenter map",
-                    modifier = Modifier.size(20.dp)
+                    modifier = Modifier.size(45.dp)
                 )
             }
         }
