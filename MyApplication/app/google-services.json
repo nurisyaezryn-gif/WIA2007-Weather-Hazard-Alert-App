@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "720851962275",
+    "project_id": "weazard-54973",
+    "storage_bucket": "weazard-54973.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720851962275:android:432fe381eca0de35e1b216",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ7YvM3Fg23j8yHPcaGP12DwR--j3xPF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
