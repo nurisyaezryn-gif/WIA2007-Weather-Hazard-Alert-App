@@ -1,6 +1,6 @@
 UM Hazard Alert: Product Requirements Document and Team Task Plan
 1. Overview
-UM Hazard Alert is an Android-first Flutter app that warns Universiti Malaya students about flood, rain, haze and heat before class, and lets the community report conditions on campus. It supports SDG 13 (Climate Action), Target 13.1: strengthen resilience and adaptive capacity to climate-related hazards.
+UM Hazard Alert is an Android app that warns Universiti Malaya students about flood, rain, haze and heat before class, and lets the community report conditions on campus. It supports SDG 13 (Climate Action), Target 13.1: strengthen resilience and adaptive capacity to climate-related hazards.
 
 Scope boundaries
 • Hazard data covers the UM campus only. It is fetched once for UM's coordinates by the server and pushed to students wherever they are.
